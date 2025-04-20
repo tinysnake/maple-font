@@ -78,9 +78,28 @@ jobs:
           fi
           echo "BUILD_ARGS=$build_args" >> $GITHUB_ENV
           python build.py $build_args
-
+        continue-on-error: true
+      - id: check_issue
+        name: Check issue feature file
+        run: |
+          if [ -f fonts/issue.fea ]
+          then
+            echo 'exists=true' >> $GITHUB_OUTPUT
+          else
+            echo 'exists=false' >> $GITHUB_OUTPUT
+          fi
+      - name: Upload issue artifact
+        if: ${{ steps.check_issue.outputs.exists == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: issue-fea-file
+          path: fonts/issue.fea
       - name: Create release
         run: |
+          if [ ! -d "fonts/archive" ]; then
+            echo "Error: Failed to build font, please check [Run custom script] step."
+            exit 1
+          fi
           echo "### Build arguments" >> NOTES
           echo "\`\`\`" >> NOTES
           echo "python build.py $BUILD_ARGS" >> NOTES

@@ -1,10 +1,18 @@
 ![Cover](./resources/header.png)
 
 <p align="center">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/subframe7536/maple-font">
-  <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/subframe7536/maple-font/total">
-  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/subframe7536/maple-font">
+  <a href="https://trendshift.io/repositories/13165" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13165" alt="subframe7536%2Fmaple-font | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+</p>
+<p align="center">
+  <img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/subframe7536/maple-font">
+  <img alt="GitHub Repo Forks" src="https://img.shields.io/github/forks/subframe7536/maple-font">
   <img alt="X (formerly Twitter) Follow" src="https://img.shields.io/twitter/follow/subframe7536">
+</p>
+<p align="center">
+  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/subframe7536/maple-font">
+  <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/subframe7536/maple-font/total">
+  <img alt="GitHub Repo License" src="https://img.shields.io/github/license/subframe7536/maple-font">
+  <img alt="GitHub Repo Issues" src="https://img.shields.io/github/issues/subframe7536/maple-font">
 </p>
 
 <p align="center">
@@ -51,8 +59,19 @@ You can download all the font archives from [Releases](https://github.com/subfra
 
 ### Scoop (Windows)
 
+```sh
+# Add bucket
+scoop bucket add nerd-fonts
+# Maple Mono (ttf format)
+scoop install Maple-Mono
+# Maple Mono NF
+scoop install Maple-Mono-NF
+# Maple Mono NF CN
+scoop install Maple-Mono-NF-CN
+```
+
 <details>
-  <summary>Click to expand</summary>
+  <summary>All packages (Click to expand)</summary>
 
   ```sh
   # Add bucket
@@ -73,8 +92,17 @@ You can download all the font archives from [Releases](https://github.com/subfra
 
 ### Homebrew (MacOS, Linux)
 
+```sh
+# Maple Mono
+brew install --cask font-maple-mono
+# Maple Mono NF
+brew install --cask font-maple-mono-nf
+# Maple Mono NF CN
+brew install --cask font-maple-mono-nf-cn
+```
+
 <details>
-  <summary>Click to expand</summary>
+  <summary>All packages (Click to expand)</summary>
 
   ```sh
   # Maple Mono
@@ -98,10 +126,133 @@ You can download all the font archives from [Releases](https://github.com/subfra
 
 </details>
 
-### AUR (Arch Linux)
+### Arch Linux
+
+ArchLinuxCN repository allows downloading a single package zip file without downloading all the package zip files in pkgbase, but AUR does not. (If you have a good solution, please contact Cyberczy(czysheep@gmail.com))
+
+#### ArchLinuxCN (Recommended)
+
+```sh
+# Maple Mono (Ligature TTF unhinted)
+paru -S ttf-maplemono
+# Maple Mono NF (Ligature unhinted)
+paru -S ttf-maplemono-nf-unhinted
+# Maple Mono NF CN (Ligature unhinted)
+paru -S ttf-maplemono-nf-cn-unhinted
+```
 
 <details>
-  <summary>Click to expand</summary>
+  <summary>All packages (Click to expand)</summary>
+
+  ```sh
+  # Maple Mono (Ligature Variable)
+  paru -S ttf-maplemono-variable
+  # Maple Mono (Ligature TTF hinted)
+  paru -S ttf-maplemono-autohint
+  # Maple Mono (Ligature TTF unhinted)
+  paru -S ttf-maplemono
+  # Maple Mono (Ligature OTF)
+  paru -S otf-maplemono
+  # Maple Mono (Ligature WOFF2)
+  paru -S woff2-maplemono
+  # Maple Mono NF (Ligature hinted)
+  paru -S ttf-maplemono-nf
+  # Maple Mono NF (Ligature unhinted)
+  paru -S ttf-maplemono-nf-unhinted
+  # Maple Mono CN (Ligature hinted)
+  paru -S ttf-maplemono-cn
+  # Maple Mono CN (Ligature unhinted)
+  paru -S ttf-maplemono-cn-unhinted
+  # Maple Mono NF CN (Ligature hinted)
+  paru -S ttf-maplemono-nf-cn
+  # Maple Mono NF CN (Ligature unhinted)
+  paru -S ttf-maplemono-nf-cn-unhinted
+
+  # Maple Mono (No-Ligature Variable)
+  paru -S ttf-maplemononl-variable
+  # Maple Mono (No-Ligature TTF hinted)
+  paru -S ttf-maplemononl-autohint
+  # Maple Mono (No-Ligature TTF unhinted)
+  paru -S ttf-maplemononl
+  # Maple Mono (No-Ligature OTF)
+  paru -S otf-maplemononl
+  # Maple Mono (No-Ligature WOFF2)
+  paru -S woff2-maplemononl
+  # Maple Mono NF (No-Ligature hinted)
+  paru -S ttf-maplemononl-nf
+  # Maple Mono NF (No-Ligature unhinted)
+  paru -S ttf-maplemononl-nf-unhinted
+  # Maple Mono CN (No-Ligature hinted)
+  paru -S ttf-maplemononl-cn
+  # Maple Mono CN (No-Ligature unhinted)
+  paru -S ttf-maplemononl-cn-unhinted
+  # Maple Mono NF CN (No-Ligature hinted)
+  paru -S ttf-maplemononl-nf-cn
+  # Maple Mono NF CN (No-Ligature unhinted)
+  paru -S ttf-maplemononl-nf-cn-unhinted
+
+  # Maple Mono Normal (Ligature Variable)
+  paru -S ttf-maplemononormal-variable
+  # Maple Mono Normal (Ligature TTF hinted)
+  paru -S ttf-maplemononormal-autohint
+  # Maple Mono Normal (Ligature TTF unhinted)
+  paru -S ttf-maplemononormal
+  # Maple Mono Normal (Ligature OTF)
+  paru -S otf-maplemononormal
+  # Maple Mono Normal (Ligature WOFF2)
+  paru -S woff2-maplemononormal
+  # Maple Mono Normal NF (Ligature hinted)
+  paru -S ttf-maplemononormal-nf
+  # Maple Mono Normal NF (Ligature unhinted)
+  paru -S ttf-maplemononormal-nf-unhinted
+  # Maple Mono Normal CN (Ligature hinted)
+  paru -S ttf-maplemononormal-cn
+  # Maple Mono Normal CN (Ligature unhinted)
+  paru -S ttf-maplemononormal-cn-unhinted
+  # Maple Mono Normal NF CN (Ligature hinted)
+  paru -S ttf-maplemononormal-nf-cn
+  # Maple Mono Normal NF CN (Ligature unhinted)
+  paru -S ttf-maplemononormal-nf-cn-unhinted
+
+  # Maple Mono Normal (No-Ligature Variable)
+  paru -S ttf-maplemononormalnl-variable
+  # Maple Mono Normal (No-Ligature TTF hinted)
+  paru -S ttf-maplemononormalnl-autohint
+  # Maple Mono Normal (No-Ligature TTF unhinted)
+  paru -S ttf-maplemononormalnl
+  # Maple Mono Normal (No-Ligature OTF)
+  paru -S otf-maplemononormalnl
+  # Maple Mono Normal (No-Ligature WOFF2)
+  paru -S woff2-maplemononormalnl
+  # Maple Mono Normal NF (No-Ligature hinted)
+  paru -S ttf-maplemononormalnl-nf
+  # Maple Mono Normal NF (No-Ligature unhinted)
+  paru -S ttf-maplemononormalnl-nf-unhinted
+  # Maple Mono Normal CN (No-Ligature hinted)
+  paru -S ttf-maplemononormalnl-cn
+  # Maple Mono Normal CN (No-Ligature unhinted)
+  paru -S ttf-maplemononormalnl-cn-unhinted
+  # Maple Mono Normal NF CN (No-Ligature hinted)
+  paru -S ttf-maplemononormalnl-nf-cn
+  # Maple Mono Normal NF CN (No-Ligature unhinted)
+  paru -S ttf-maplemononormalnl-nf-cn-unhinted
+  ```
+
+</details>
+
+#### AUR (Not Recommended)
+
+```sh
+# Maple Mono (Ligature TTF unhinted)
+paru -S maplemono-ttf
+# Maple Mono NF (Ligature unhinted)
+paru -S maplemono-nf-unhinted
+# Maple Mono NF CN (Ligature unhinted)
+paru -S maplemono-nf-cn-unhinted
+```
+
+<details>
+  <summary>All packages (Click to expand)</summary>
 
   ```sh
   # Maple Mono (Ligature Variable)
@@ -201,8 +352,19 @@ You can download all the font archives from [Releases](https://github.com/subfra
 
 ### Nixpkgs (NixOS, Linux, MacOS)
 
+```nix
+fonts.packages = with pkgs; [
+  # Maple Mono (Ligature TTF unhinted)
+  maple-mono.truetype
+  # Maple Mono NF (Ligature unhinted)
+  maple-mono.NF-unhinted
+  # Maple Mono NF CN (Ligature unhinted)
+  maple-mono.NF-CN-unhinted
+];
+```
+
 <details>
-  <summary>Click to expand</summary>
+  <summary>All packages (Click to expand)</summary>
 
   ```nix
   fonts.packages = with pkgs; [
@@ -429,13 +591,18 @@ If you think that CN glyphs spacing is **tooooo large**, there is a **EXPERIMENT
 
 The build script will auto download required assets from GitHub. If you have trouble downloading, please setup `github_mirror` in [config.json](./config.json) or `$GITHUB` to your environment variable. (Target URL will be `https://<github_mirror>/<user>/<repo>/releases/download/<tag>/<file>`), or just download the target `.zip` file and put it in the same directory as `build.py`.
 
+#### Traditional Chinese Punctuation Support
+
+By enabling `cv99`, all Chinese punctuation marks will be centred. See more details in [#150](https://github.com/subframe7536/maple-font/issues/150)
+
 ### Build Script Usage
 
 ```
 usage: build.py [-h] [-v] [-d] [--debug] [-n] [--feat FEAT] [--apply-fea-file]
                 [--hinted | --no-hinted] [--liga | --no-liga] [--cn-narrow]
                 [--nerd-font | --no-nerd-font] [--cn | --no-cn] [--cn-both]
-                [--ttf-only] [--cache] [--cn-rebuild] [--archive]
+                [--ttf-only] [--least-styles] [--cache] [--cn-rebuild]
+                [--archive]
 
 ✨ Builder and optimizer for Maple Mono
 
@@ -443,7 +610,7 @@ options:
   -h, --help        show this help message and exit
   -v, --version     show program's version number and exit
   -d, --dry         Output config and exit
-  --debug           Add `Debug` suffix to family name, skip optimization
+  --debug           Add `Debug` suffix to family name and faster build
 
 Feature Options:
   -n, --normal      Use normal preset, just like `JetBrains Mono` with slashed zero
@@ -465,10 +632,32 @@ Build Options:
   --cn-both         Build both `Maple Mono CN` and `Maple Mono NF CN`. Nerd-Font
                     version must be enabled
   --ttf-only        Only build TTF format
+  --least-styles    Only build regular / bold / italic / bold italic style
   --cache           Reuse font cache of TTF, OTF and Woff2 formats
   --cn-rebuild      Reinstantiate CN base font
   --archive         Build font archives with config and license. If has `--cache`
                     flag, only archive Nerd-Font and CN formats
+```
+
+## Development
+
+### Design
+
+Using [FontLab](https://www.fontlab.com/) or [Glyphs](https://glyphs.app), generate variable TTF into `source/` folder.
+
+### Build
+
+```sh
+# Init project
+uv sync
+# Dev
+uv run build.py --ttf-only --cn --debug
+# Update nerd font
+uv run task.py nerd-font
+# Update fea file
+uv run task.py fea
+# Release
+uv run task.py release 7.0
 ```
 
 ## Credit
